@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.settingHome {
+  padding:10px ;
+  width: 90vw;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.bg-image {
+  background-image: url('./assets/joyful-emoji-background-world-emoji-day-happy-day-generative-ai_90099-8945.jpg');
+  position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.4px);
+  -webkit-backdrop-filter: blur(5.4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.textBar {
+  border-radius: 20px;
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+}
+
+.ck-content {
+  border-radius: 20px;
+}
+
+.ck-editor__editable[role="textbox"] {
+  /* Editing area */
+  min-height: 100px;
+}
+
+.bg-image > div > p{
+  width: fit-content;
+  margin: auto;
+  padding: 7px;
+  font-size: large;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(249, 252, 254);
+  background-color: rgb(224, 12, 54);
+}
+
+textarea{
+  width: 100%;
+  padding: 10px;
+  min-height: 30px;
+  border-radius: 10px;
+}
+
+.title{
+  font-size: 70px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.btn-div{
+  width: 100%;
+}
+
+.btn {
+  background-color: teal;
+  border-radius: 15px;
+  color: white;
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+  width: 100%;
+  height: 60px;
+  /* position: relative;
+  bottom: 0 px;
+  left: 50%;
+  transform: translate(-50%, 0%); */
+}
+
+.cardsec{
+  padding:15px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.writesec{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
+gap: 20px;
+position: relative;
+bottom: 0;
+
+}
+
+.confo{
+  min-width: 90%;
+}
+@media only screen and (min-width: 320px) and (max-width: 430px) {
+  .settingHome {
+    padding: 0px;
+    width: 90vw;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    overflow-y: scroll;
+  }
+  .ck-editor__editable[role="textbox"] {
+    /* Editing area */
+    min-height: 50px;
+  }
+  .writesec{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    position: relative;
+    bottom: 0;
+  .textBar {
+    border-radius: 20px;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  
+  }
+  .btn-div{
+    position:relative ;
+    width: 100%;
+  }
+  }
+  .btn {
+    background-color: teal;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    font-weight: 600;
+    width: 100%;
+    height: 30px;
+    /* position: relative;
+    bottom: 0 px;
+    left: 50%;
+    transform: translate(-50%, 0%); */
+  }
+  
+ .bg-image > div > p{
+  width: 100%;
+    font-size: 10px;
+    text-align: center;
+    color: rgb(252, 252, 252);
+    background-color: rgb(224, 12, 54);  }
+  
+  .title{
+    font-size: 20px;
+    color: rgb(249, 252, 255);
+    text-align: center;
+  }
+  .settingHome {
+    width: 100vw;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+  }
+}
